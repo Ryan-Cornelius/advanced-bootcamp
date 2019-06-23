@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            color: white;
+            background: #2c3e50;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 100vh;
+        }
+
+        header, footer, main {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        header {
+            display: flex;
+            flex-basis: 100%;
+            background: #1abc9c;
+            min-height: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            flex-basis: 100%;
+            background: #1abc9c;
+            min-height: 100px;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            min-height: 800px;
+        }
+        
+        article {
+            background: #BCF0F1;
+            flex-basis: 60%;
+            flex-grow: 4;
+        }
+        nav {
+            background: #95a5a6;
+            flex-basis: 20%;
+            order: -1;
+            flex-grow: 1;
+
+        }
+        aside {
+            background: #3498db;
+            flex-basis: 20%;
+            flex-grow: 1;
+
+        }
+    
+
+        @media all and (max-width: 640px) {
+            main {
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            nav {
+                order: 0;
+            }
+        }
+
+    
+    </style>
+</head>
+<body>
+    
+        <header>
+            <a href="">Nav Left</a>
+            <a href="">Nav Right</a>
+        </header>
+        <main>
+            <article>MAIN CONTENT</article>
+            <nav>SIDE NAV</nav>
+            <aside>ASIDE</aside>
+        </main>
+        <footer>FOOTER</footer>
+
+
+</body>
+</html>
